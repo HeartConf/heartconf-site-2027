@@ -13,7 +13,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 100;
-  src: url('../fonts/outfit-v15-latin_latin-ext-100.woff2') format('woff2');
+  src: url('fonts/outfit-v15-latin_latin-ext-100.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 200;
-  src: url('../fonts/outfit-v15-latin_latin-ext-200.woff2') format('woff2');
+  src: url('fonts/outfit-v15-latin_latin-ext-200.woff2') format('woff2');
 }
 
 @font-face {
