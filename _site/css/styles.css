@@ -1,3 +1,5 @@
+@import url('fonts.css');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +9,9 @@
 :where(html) {
   --milk:       #f6f6f3;
   --cheesecake: #f3f2ee;
-  --hot-pink:   #f51e92;
   --mustard:    #e1c451;
   --aubergine:  #3b0221;
+  --hot-pink:   #f51e92;
 
   --font-brand-name: 'Alegreya Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Outfit', 'Avenir Next', 'Avenir', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
