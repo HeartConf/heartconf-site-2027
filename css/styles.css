@@ -37,11 +37,13 @@
   gap: 1rem;
   margin-top: 4rem;
   .hc-logo {
-    width: 200px;
-    height: 200px;
+    width: 15rem;
   }
   h1 {
     font-size: 6rem;
     margin-top: 1rem;
+  }
+  .shout {
+    font-size: 133%;
   }
 }
