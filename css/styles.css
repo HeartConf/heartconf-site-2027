@@ -22,7 +22,7 @@
   background-color: var(--cheesecake);
   font-family: var(--font-body);
   font-size: 100%;
-  line-height: --base-line-height;
+  line-height: var(--base-line-height);
 }
 
 .brand-name {
@@ -31,6 +31,7 @@
 }
 
 #index {
+  flex: 1;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -46,4 +47,31 @@
   .shout {
     font-size: 133%;
   }
+}
+
+/* magpie production
+    - make sure we have a sticky footer
+    - make a and img block elements
+    - float right */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#index {
+  flex: 1;
+}
+
+#magpie-production {
+  width: 15rem;
+  display: block;
+  float: right;
+  margin-right: 1em;
+}
+
+#magpie-production img {
+  width: 15rem;
+  display: block;
 }
