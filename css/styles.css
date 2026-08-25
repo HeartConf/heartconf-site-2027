@@ -18,6 +18,38 @@
 
   --base-line-height: 1.5;
 
+  /* utopia-clamp */
+  --text-fluid-0000: clamp(0.512rem, 0.475429rem + 0.182857vw, 0.64rem);
+  --text-fluid-000: clamp(0.64rem, 0.594286rem + 0.228571vw, 0.8rem);
+  --text-fluid-00: clamp(0.8rem, 0.742857rem + 0.285714vw, 1.rem);
+  --text-fluid-0: clamp(1.rem, 0.928571rem + 0.357143vw, 1.25rem);
+  --text-fluid-1: clamp(1.25rem, 1.160714rem + 0.446429vw, 1.5625rem);
+  --text-fluid-2: clamp(1.5625rem, 1.450893rem + 0.558036vw, 1.953125rem);
+  --text-fluid-3: clamp(1.953125rem, 1.813616rem + 0.697545vw, 2.441406rem);
+  --text-fluid-4: clamp(2.441406rem, 2.26702rem + 0.871931vw, 3.051758rem);
+  --text-fluid-5: clamp(3.051758rem, 2.833775rem + 1.089914vw, 3.814697rem);
+  --text-fluid-6: clamp(3.814697rem, 3.542219rem + 1.362392vw, 4.768372rem);
+  --text-fluid-7: clamp(4.768372rem, 4.427774rem + 1.702990vw, 5.960464rem);
+  --text-fluid-8: clamp(5.960464rem, 5.534717rem + 2.128737vw, 7.450581rem);
+  --text-fluid-9: clamp(7.450581rem, 6.918396rem + 2.660922vw, 9.313226rem);
+  --text-fluid-10: clamp(9.313226rem, 8.647995rem + 3.326152vw, 11.641532rem);
+  --text-fluid-11: clamp(11.641532rem, 10.809994rem + 4.157690vw, 14.551915rem);
+  --space-0000: clamp(0.148148rem, 0.126984rem + 0.105820vw, 0.222222rem);
+  --space-000: clamp(0.222222rem, 0.190476rem + 0.158730vw, 0.333333rem);
+  --space-00: clamp(0.333333rem, 0.285714rem + 0.238095vw, 0.5rem);
+  --space-0: clamp(0.5rem, 0.428571rem + 0.357143vw, 0.75rem);
+  --space-1: clamp(0.75rem, 0.642857rem + 0.535714vw, 1.125rem);
+  --space-2: clamp(1.125rem, 0.964286rem + 0.803571vw, 1.6875rem);
+  --space-3: clamp(1.6875rem, 1.446429rem + 1.205357vw, 2.53125rem);
+  --space-4: clamp(2.53125rem, 2.169643rem + 1.808036vw, 3.796875rem);
+  --space-5: clamp(3.796875rem, 3.254464rem + 2.712054vw, 5.695313rem);
+  --space-6: clamp(5.695313rem, 4.881696rem + 4.068080vw, 8.542969rem);
+  --space-7: clamp(8.542969rem, 7.322545rem + 6.102121vw, 12.814453rem);
+  --space-8: clamp(12.814453rem, 10.983817rem + 9.153181vw, 19.22168rem);
+  --space-9: clamp(19.22168rem, 16.475725rem + 13.729771vw, 28.83252rem);
+  --space-10: clamp(28.83252rem, 24.713588rem + 20.594657vw, 43.248779rem);
+  --space-11: clamp(43.248779rem, 37.070382rem + 30.891985vw, 64.873169rem);
+
   color: var(--aubergine);
   background-color: var(--cheesecake);
   font-family: var(--font-body);
@@ -38,14 +70,14 @@
   gap: 1rem;
   margin-top: 4rem;
   .hc-logo {
-    width: 15rem;
+    width: var(--space-8);
   }
   h1 {
-    font-size: 6rem;
+    font-size: var(--text-fluid-6);
     margin-top: 1rem;
   }
   .shout {
-    font-size: 133%;
+    font-size: var(--text-fluid-2);
   }
 }
 
@@ -65,13 +97,13 @@ body {
 }
 
 #magpie-production {
-  width: 15rem;
+  width: var(--space-7);
   display: block;
   float: right;
   margin-right: 1em;
 }
 
 #magpie-production img {
-  width: 15rem;
+  width: var(--space-7);
   display: block;
 }
