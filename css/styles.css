@@ -172,3 +172,7 @@ main {
     height: 1.25em;
   }
 }
+iframe.youtube {
+  width: var(--space-10);
+  aspect-ratio: 16/9;
+}
