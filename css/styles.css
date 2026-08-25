@@ -174,5 +174,6 @@ main {
 }
 iframe.youtube {
   width: var(--space-10);
+  max-width: 85vw;
   aspect-ratio: 16/9;
 }
