@@ -57,6 +57,11 @@
   line-height: var(--base-line-height);
 }
 
+h1 { font-size: var(--text-fluid-5); }
+h2 { font-size: var(--text-fluid-4); }
+h3 { font-size: var(--text-fluid-3); }
+h4 { font-size: var(--text-fluid-2); }
+
 .brand-name {
   font-family: var(--font-brand-name);
   font-weight: 900;
@@ -67,9 +72,11 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 4rem;
-  .hc-logo {
+  gap: var(--space-0);
+  header {
+    margin-top: var(--space-3);
+  }
+  .hero-logo {
     width: var(--space-8);
   }
   h1 {
@@ -78,6 +85,14 @@
   }
   .shout {
     font-size: var(--text-fluid-2);
+  }
+
+  .images img {
+    height: var(--space-9);
+  }
+
+  section + section {
+    margin-top: var(--space-4);
   }
 }
 
@@ -92,7 +107,7 @@ body {
   min-height: 100vh;
 }
 
-#index {
+main {
   flex: 1;
 }
 
@@ -106,4 +121,54 @@ body {
 #magpie-production img {
   width: var(--space-7);
   display: block;
+}
+
+.template-default {
+  main {
+    max-width: var(--space-11);
+    margin: 0 auto;
+    padding: 0 var(--space-0);
+  }
+
+
+  h1 {
+    margin-bottom: var(--space-1);
+    &:first-child {
+      margin-top: var(--space-2);
+    }
+  }
+
+  p {
+    font-size: var(--text-fluid-1);
+  }
+
+  p + p {
+    margin-top: 0.5em ;
+  }
+}
+
+.primary-nav {
+  background-color: var(--mustard);
+  font-size: var(--text-fluid-3);
+  padding: 1rem 0;
+  border-bottom: 4px solid var(--aubergine);
+  font-weight: 900;
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-00);
+  }
+  a {
+    text-decoration: none;
+    color: var(--aubergine);
+  }
+  .hc-logo {
+    height: 1.25em;
+  }
 }

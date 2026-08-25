@@ -1,13 +1,14 @@
 ---
-layout: default
+layout: minimal
 title: HeartConf'27
 permalink: /
 ---
 
-
 <main id="index">
+  {% include nav.html %}
+
   <header>
-    <svg class="hc-logo" viewBox="0 0 100 100"><use href="#svg-hc-logo"/></svg>
+    <svg class="hero-logo hc-logo" viewBox="0 0 100 100"><use href="#svg-hc-logo"/></svg>
     <h1 class="brand-name">HeartConf'27</h1>
   </header>
 
@@ -17,6 +18,21 @@ permalink: /
     <p><a href="https://hello.arnebrasseur.net/subscription/form">Sign up for the newsletter!</a></p>
   </section>
 
+  <section class="images">
+    <img alt="The Lamot conference center" src="images/lamot.png"></img>
+    <img alt="Three historic wooden houses in Mechelen" src="images/mechelen_old_houses.png"></img>
+  </section>
+
+  <section class="keynotes">
+    <div>
+      <h3>2019 Opening Keynote</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-IGViUlbemo?si=P5f2gG4J179i9LN2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <h3>2024 Opening Keynote</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MJzV0CX0q8o?si=738lvbQ1baFvhKPl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
 </main>
 
 <footer>
