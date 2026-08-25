@@ -35,7 +35,7 @@ make. We try to make ample space for people to meet and mingle, through long
 breaks, a dedicated community space, and through a variety of fringe activities.
 In fact, any attendee can set up their own activity and gather people together.
 In the past we've had a guided city tour, book swaps, bouldering, gift shopping,
-juggling, emacs and vim user groups, and dinner in small, randomised groups.
+juggling, yoga, emacs and vim user groups, and dinner in small, randomised groups.
 
 HeartConf builds upon the legacy of Heart of Clojure 2019 and 2024. Itself
 already an atypical Clojure conference, Heart of Clojure was never strictly
