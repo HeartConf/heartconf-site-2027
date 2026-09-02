@@ -234,6 +234,12 @@ figure {
   display: block;
 }
 
+iframe.youtube {
+  width: var(--space-10);
+  max-width: 85vw;
+  aspect-ratio: 16/9;
+}
+
 /*-----------------------------------------
  Specific pages
 */
@@ -272,15 +278,4 @@ figure {
   section + section {
     margin-top: var(--space-4);
   }
-}
-
-
-
-.template-default {
-}
-
-iframe.youtube {
-  width: var(--space-10);
-  max-width: 85vw;
-  aspect-ratio: 16/9;
 }
