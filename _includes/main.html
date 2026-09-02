@@ -1,0 +1,10 @@
+{% assign ext = page.path | split: "." | last %}
+{% if page.permalink == "/" %}
+  {% assign slug = "index" %}
+{% else %}
+  {% assign slug = page.permalink | slugify %}
+{% endif %}
+
+<main id="page-{{slug}}" class="util-1col {% if ext == "md" %}markdown{% endif %}">
+  {{ content }}
+</main>

@@ -5,13 +5,7 @@
   <body class="template-default">
     {% include svg/hc-logo.svg %}
     {% include nav.html %}
-    <main id="{{ page.permalink | slugify }}">
-      {{ content }}
-    </main>
-    <footer>
-      <a target="_blank" id="magpie-production" href="https://magpie.software">
-        <img alt="A Magpie Production" src="https://magpie.software/images/magpie-production.webp"></img>
-      </a>
-    </footer>
+    {% include main.html %}
+    {% include footer.html %}
   </body>
 </html>

@@ -1,10 +1,18 @@
 @import url('fonts.css');
 
+/*-----------------------------------------
+ Reset
+*/
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/*-----------------------------------------
+ Tokens & Default Element Styling
+*/
 
 :where(html) {
   --milk:       #f6f6f3;
@@ -62,12 +70,175 @@ h2 { font-size: var(--text-fluid-4); }
 h3 { font-size: var(--text-fluid-3); }
 h4 { font-size: var(--text-fluid-2); }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* push down footer */
+}
+
+p {
+  font-size: var(--text-fluid-1);
+}
+
+p + p {
+  margin-top: 0.5em ;
+}
+
+footer {
+  display: flex;
+  background-color: var(--aubergine);
+  color: var(--cheesecake);
+  padding: var(--space-2) 0 var(--space-4) 0;
+  border-top: var(--mustard) 4px solid;
+  a {
+    color: var(--cheesecake);
+    text-decoration: none;
+  }
+  nav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+figure {
+  border: var(--aubergine) 4px solid;
+  position: relative;
+  display: inline-flex;
+  min-width: var(--space-8);
+
+  img {
+    position: relative;
+    top: 2px;
+    padding: 7px;
+    z-index: -1;
+    height: auto;
+    width: 100%;
+  }
+
+  figcaption {
+    font-weight: bold;
+    font-size: var(--text-fluid-0);
+    color: var(--cheesecake);
+    background-color: var(--hot-pink);
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-2);
+    padding: 0 var(--space-2) 0 var(--space-0);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    bottom: -15px;
+    right: -14px;
+    background: var(--mustard);
+    z-index: -2;
+  }
+
+  &.variant {
+    img {
+      top: 3px;
+    }
+    &::after {
+      top: 5px;
+      left: 2px;
+      bottom: -13px;
+      right: -13px;
+    }
+  }
+}
+
+
+/*-----------------------------------------
+ Utility classes
+*/
+
+/* single centered container, used on main, footer, etc */
+.util-1col {
+  max-width: var(--space-11);
+  margin: 0 auto;
+  padding: 0 var(--space-0);
+}
+
+/* automatically applied to main for .md files, make sure we have nice typography */
+.markdown {
+  h1 {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-1);
+  }
+  h2 {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-0);
+  }
+}
+
+/*-----------------------------------------
+ Specific page elements / components
+*/
+
+.primary-nav {
+  background-color: var(--mustard);
+  font-size: var(--text-fluid-3);
+  border-bottom: 4px solid var(--aubergine);
+  font-weight: 900;
+  padding: var(--space-1);
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: var(--space-1) var(--space-4);
+    flex-wrap: wrap;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-00);
+  }
+  a {
+    text-decoration: none;
+    color: var(--aubergine);
+  }
+  .hc-logo {
+    height: 1.25em;
+  }
+}
+
 .brand-name {
   font-family: var(--font-brand-name);
   font-weight: 900;
 }
 
-#index {
+/* footer */
+#magpie-production {
+  width: var(--space-7);
+  display: block;
+  margin: var(--space-3) var(--space-2) 0 auto;
+}
+
+#magpie-production img {
+  width: var(--space-7);
+  display: block;
+}
+
+/*-----------------------------------------
+ Specific pages
+*/
+
+#page-index {
   flex: 1;
   text-align: center;
   display: flex;
@@ -87,8 +258,15 @@ h4 { font-size: var(--text-fluid-2); }
     font-size: var(--text-fluid-2);
   }
 
-  .images img {
-    height: var(--space-9);
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+  }
+  figure {
+    flex: 1 1 40%;
   }
 
   section + section {
@@ -96,82 +274,11 @@ h4 { font-size: var(--text-fluid-2); }
   }
 }
 
-/* magpie production
-    - make sure we have a sticky footer
-    - make a and img block elements
-    - float right */
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-#magpie-production {
-  width: var(--space-7);
-  display: block;
-  float: right;
-  margin-right: 1em;
-}
-
-#magpie-production img {
-  width: var(--space-7);
-  display: block;
-}
 
 .template-default {
-  main {
-    max-width: var(--space-11);
-    margin: 0 auto;
-    padding: 0 var(--space-0);
-  }
-
-
-  h1 {
-    margin-bottom: var(--space-1);
-    &:first-child {
-      margin-top: var(--space-2);
-    }
-  }
-
-  p {
-    font-size: var(--text-fluid-1);
-  }
-
-  p + p {
-    margin-top: 0.5em ;
-  }
 }
 
-.primary-nav {
-  background-color: var(--mustard);
-  font-size: var(--text-fluid-3);
-  padding: 1rem 0;
-  border-bottom: 4px solid var(--aubergine);
-  font-weight: 900;
-  ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    gap: var(--space-4);
-  }
-  li {
-    display: flex;
-    align-items: center;
-    gap: var(--space-00);
-  }
-  a {
-    text-decoration: none;
-    color: var(--aubergine);
-  }
-  .hc-logo {
-    height: 1.25em;
-  }
-}
 iframe.youtube {
   width: var(--space-10);
   max-width: 85vw;
