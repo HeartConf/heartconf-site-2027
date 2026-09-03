@@ -381,10 +381,7 @@ iframe.youtube {
   }
 }
 
-#page-newsletter {
-  section {
-    /* max-width: 30vw; */
-  }
+#page-newsletter, #page-guild {
   &>div>div {
     display:flex;
     gap: var(--space-1);
