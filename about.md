@@ -11,6 +11,8 @@ hype. It's a community of practicioners coming together to exchange insights,
 and to speak openly and candidly about the state of the industry, and how we can
 improve it.
 
+## An Inspiring Programme
+
 We like to focus on software as socio-technical systems, including the people
 who create, run, use, or are impacted by information technology, and centering
 their experience.
@@ -29,6 +31,8 @@ approaches in distributed systems. New and evolving open standards, and
 interesting approaches to software development that could transfer to other
 communities.
 
+## Human Connection
+
 While talks matter to set the tone, to inspire, spark conversation, and share
 experiences, the real heart of any conferences are the human connections you
 make. We try to make ample space for people to meet and mingle, through long
@@ -36,6 +40,12 @@ breaks, a dedicated community space, and through a variety of fringe activities.
 In fact, any attendee can set up their own activity and gather people together.
 In the past we've had a guided city tour, book swaps, bouldering, gift shopping,
 juggling, yoga, emacs and vim user groups, and dinner in small, randomised groups.
+
+At HeartConf you are not a passive consumer, everyone involved — speakers,
+sponsors, and attendees — is able to curate their experience, and is invited to
+contribute something of their own, to co-create an unforgettable event.
+
+## Legacy
 
 HeartConf builds upon the legacy of Heart of Clojure 2019 and 2024. Itself
 already an atypical Clojure conference, Heart of Clojure was never strictly

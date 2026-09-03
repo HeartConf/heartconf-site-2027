@@ -15,11 +15,18 @@
 */
 
 :where(html) {
-  --milk:       #f6f6f3;
-  --cheesecake: #f3f2ee;
-  --mustard:    #e1c451;
-  --aubergine:  #3b0221;
-  --hot-pink:   #f51e92;
+  --milk:        #f6f6f3;
+  --cheesecake:  #f3f2ee;
+  --mustard:     #e1c451;
+  --aubergine:   #73005c;
+  --chocolate:   #3b0221;
+  --hot-pink:    #f51e92;
+  --candy-floss: #cd4a92;
+  --bubble-gum:  #eab3d0;
+
+  --mustard-cake: color-mix(in oklab, var(--cheesecake) 30%, var(--mustard) 70%);
+
+  --thick-line: 6px solid;
 
   --font-brand-name: 'Alegreya Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Outfit', 'Avenir Next', 'Avenir', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -57,8 +64,9 @@
   --space-9: clamp(19.22168rem, 16.475725rem + 13.729771vw, 28.83252rem);
   --space-10: clamp(28.83252rem, 24.713588rem + 20.594657vw, 43.248779rem);
   --space-11: clamp(43.248779rem, 37.070382rem + 30.891985vw, 64.873169rem);
+  --space-12: clamp(64.873169rem, 55.605573rem + 46.337978vw, 97.309753rem);
 
-  color: var(--aubergine);
+  color: var(--chocolate);
   background-color: var(--cheesecake);
   font-family: var(--font-body);
   font-size: 100%;
@@ -88,13 +96,37 @@ p + p {
   margin-top: 0.5em ;
 }
 
+a {
+  color: var(--hot-pink);
+  text-decoration-color: var(--bubble-gum);
+  text-decoration-skip-ink: none;
+  text-underline-offset: -0.066em;
+  text-decoration-thickness: 0.2em;
+  display: inline-block;
+  &:visited {
+    color: var(--candy-floss);
+  }
+  &:hover {
+    text-underline-offset: -0.266em;
+    text-decoration-thickness: 0.4em;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--bubble-gum);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
 footer {
   display: flex;
-  background-color: var(--aubergine);
+  background-color: var(--chocolate);
   color: var(--cheesecake);
   padding: var(--space-2) 0 var(--space-4) 0;
-  border-top: var(--mustard) 4px solid;
-  a {
+  border-top: var(--thick-line) var(--mustard);
+  a, a:visited {
     color: var(--cheesecake);
     text-decoration: none;
   }
@@ -113,10 +145,9 @@ footer {
 }
 
 figure {
-  border: var(--aubergine) 4px solid;
+  border: var(--thick-line) var(--chocolate);
   position: relative;
   display: inline-flex;
-  min-width: var(--space-8);
 
   img {
     position: relative;
@@ -135,7 +166,7 @@ figure {
     position: absolute;
     top: var(--space-2);
     left: var(--space-2);
-    padding: 0 var(--space-2) 0 var(--space-0);
+    padding: 0 var(--space-3) 0 var(--space-0);
   }
 
   &::after {
@@ -169,7 +200,7 @@ figure {
 
 /* single centered container, used on main, footer, etc */
 .util-1col {
-  max-width: var(--space-11);
+  max-width: var(--space-12);
   margin: 0 auto;
   padding: 0 var(--space-0);
 }
@@ -184,6 +215,21 @@ figure {
     margin-top: var(--space-1);
     margin-bottom: var(--space-0);
   }
+  h1, h1::after, h2, h2::after {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+  }
+  h1::after, h2::after { content: "    "; color: transparent;}
+  h1 {
+    text-decoration-color: var(--mustard);
+    text-decoration-thickness: 0.3em;
+    text-underline-offset: -0.2em;
+  }
+  h2 {
+    text-decoration-color: var(--mustard-cake);
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: -0.1em;
+  }
 }
 
 /*-----------------------------------------
@@ -193,27 +239,48 @@ figure {
 .primary-nav {
   background-color: var(--mustard);
   font-size: var(--text-fluid-3);
-  border-bottom: 4px solid var(--aubergine);
+  border-bottom: var(--thick-line) var(--chocolate);
   font-weight: 900;
   padding: var(--space-1);
   ul {
+    max-width: var(--space-12);
+    margin: 0 auto;
     display: flex;
     list-style-type: none;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--space-1) var(--space-4);
     flex-wrap: wrap;
   }
   li {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     gap: var(--space-00);
   }
   a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-00);
+    flex-wrap: nowrap;
     text-decoration: none;
-    color: var(--aubergine);
+    color: var(--chocolate);
+    &:focus-visible {
+      outline: 2px solid var(--cheesecake);
+    }
   }
   .hc-logo {
     height: 1.25em;
+    margin-bottom: -0.125em;
+  }
+}
+
+@media (max-width: 30rem) {
+  .primary-nav ul {
+    flex-direction: column;
+    align-items: center;
+    li:not(:first-child) {
+      font-size: var(--text-fluid-2);
+    }
   }
 }
 
@@ -251,7 +318,7 @@ iframe.youtube {
   flex-direction: column;
   gap: var(--space-0);
   header {
-    margin-top: var(--space-3);
+    margin-top: var(--space-4);
   }
   .hero-logo {
     width: var(--space-8);
