@@ -18,6 +18,7 @@
   --milk:        #f6f6f3;
   --cheesecake:  #f3f2ee;
   --mustard:     #e1c451;
+  --egg-yolk:    #d1ab13;
   --aubergine:   #73005c;
   --chocolate:   #3b0221;
   --hot-pink:    #f51e92;
@@ -27,6 +28,7 @@
   --mustard-cake: color-mix(in oklab, var(--cheesecake) 30%, var(--mustard) 70%);
 
   --thick-line: 6px solid;
+  --focus-outline: 3px solid var(--bubble-gum);
 
   --font-brand-name: 'Alegreya Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Outfit', 'Avenir Next', 'Avenir', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -111,12 +113,8 @@ a {
     text-decoration-thickness: 0.4em;
   }
   &:focus-visible {
-    outline: 2px solid var(--bubble-gum);
     outline-offset: 2px;
     border-radius: 2px;
-  }
-  &:active {
-    transform: translateY(2px);
   }
 }
 
@@ -193,6 +191,42 @@ figure {
   }
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-0);
+}
+
+*:focus-visible {
+  outline: var(--focus-outline);
+}
+a, input, button {
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+input[type=text], input[type=email] {
+  background-color: var(--milk);
+  font-size: var(--text-000);
+  border: none;
+  border-radius: var(--space-0);
+  padding: var(--space-00) var(--space-1);
+}
+
+button, input[type=submit] {
+  background-color: var(--mustard);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--space-1);
+  padding: var(--space-0) var(--space-1);
+  color: var(--chocolate);
+  font-weight: 900;
+  &:hover {
+    background-color: var(--egg-yolk);
+  }
+}
 
 /*-----------------------------------------
  Utility classes
@@ -206,7 +240,7 @@ figure {
 }
 
 /* automatically applied to main for .md files, make sure we have nice typography */
-.markdown {
+.fancy-headings {
   h1 {
     margin-top: var(--space-4);
     margin-bottom: var(--space-1);
@@ -344,5 +378,46 @@ iframe.youtube {
 
   section + section {
     margin-top: var(--space-4);
+  }
+}
+
+#page-newsletter {
+  section {
+    /* max-width: 30vw; */
+  }
+  &>div>div {
+    display:flex;
+    gap: var(--space-1);
+  }
+  form {
+    color: var(--cheesecake);
+    background-color: var(--chocolate);
+    font-size: var(--text-fluid-1);
+    padding: var(--space-1);
+    border-radius: var(--space-0);
+    min-width: min(40vw, 30rem);
+    align-self: flex-start;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-00);
+    width: 100%;
+    align-items: stretch;
+  }
+
+  input[type=submit] {
+    margin-top: var(--space-0);
+    font-size: var(--text-fluid-1);
+  }
+}
+
+@media (max-width: 50rem) {
+  #page-newsletter>div>div {
+    flex-direction: column;
+    form {
+      align-self: stretch;
+    }
   }
 }

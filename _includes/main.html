@@ -5,6 +5,6 @@
   {% assign slug = page.permalink | slugify %}
 {% endif %}
 
-<main id="page-{{slug}}" class="util-1col {% if ext == "md" %}markdown{% endif %}">
+<main id="page-{{slug}}" class="util-1col {% if ext == "md" %}markdown fancy-headings{% endif %}">
   {{ content }}
 </main>
