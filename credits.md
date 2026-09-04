@@ -30,7 +30,7 @@ Video recordings by [POP Productions](https://pop-prod.com/en/)
 
 ### Heart of Clojure 2019
 
-Video recordings and photography both by [https://istream.pl/](iStream).
+Video recordings and photography both by [iStream](https://istream.pl/).
 
 ## Screen printing
 
