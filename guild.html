@@ -34,14 +34,14 @@ layout: default
     </section>
     <form method="post" action="https://hello.arnebrasseur.net/subscription/form">
       <input type="hidden" name="nonce" />
-      <input type="hidden" name="l" checked value="9310ab64-4ac5-4883-83ba-b63442ed6253" />
+      <input type="hidden" name="l" value="9310ab64-4ac5-4883-83ba-b63442ed6253" value="on" />
       <label for="email"> 
         <span>Email&nbsp;&nbsp;&nbsp;⃰</span>
         <input type="email" id="email" name="email" required placeholder="john@doe.eu" />
       </label>
       <label for="name"> 
         <span>Name</span>
-        <input type="text" name="name" placeholder="John Doe" />
+        <input id="name" type="text" name="name" placeholder="John Doe" />
       </label>
       <input type="submit" value="Subscribe " />
     </form>
