@@ -411,7 +411,7 @@ iframe.youtube {
 }
 
 @media (max-width: 50rem) {
-  #page-newsletter>div>div {
+  #page-guild>div>div, #page-newsletter>div>div {
     flex-direction: column;
     form {
       align-self: stretch;
