@@ -36,6 +36,10 @@ Video recordings and photography both by [https://istream.pl/](iStream).
 
 The on-site screen printing in 2019 and 2024 was done by [Scheefdruk](https://www.sojovzw.be/scheefdruk).
 
+## Flag
+
+The Intersex-inclusive LGBT progress pride flag is by [Valentino Vecchietti](https://www.globalinclusiveprideflag.com/).
+
 ## Brand Design
 
 The HeartConf color scheme, logotype, branding, and website, are all by [Arne Brasseur](https://arnebrasseur.net)
