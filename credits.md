@@ -1,5 +1,5 @@
 ---
-title: Credits | HeartConf'27
+title: Credits
 permalink: /credits
 layout: default
 ---

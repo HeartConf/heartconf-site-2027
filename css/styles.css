@@ -214,7 +214,7 @@ input[type=text], input[type=email] {
 }
 
 .btn, button, input[type=submit] {
-  color: var(--chocolate);
+  color: var(--black);
   background-color: var(--cheesecake);
   text-decoration: none;
   /* border: none; */
@@ -222,7 +222,7 @@ input[type=text], input[type=email] {
   padding: var(--space-0) var(--space-1);
   font-weight: 900;
   &:where(:hover) {
-    background-color: var(--bubble-gum);
+    background-color: alpha(from var(--mustard) / 30%);
     transform: translateY(1px);
     box-shadow: -5px 5px 0 0 var(--mustard);
   }
@@ -239,6 +239,10 @@ input, button, .btn {
   }
 }
 
+img {
+  object-fit: cover;
+}
+
 /*-----------------------------------------
  Utility classes
 */
@@ -247,7 +251,7 @@ input, button, .btn {
 .full-col {
   max-width: var(--space-12);
   margin: 0 auto;
-  padding: 0 var(--space-0);
+  padding: 0 var(--space-1);
 }
 
 .invert {
@@ -255,7 +259,7 @@ input, button, .btn {
   --bg-color: var(--chocolate);
   color: var(--text-color);
   background-color: var(--bg-color);
-  a {
+  :where(a) {
     color: var(--bubble-gum);
     text-decoration-color: var(--cheesecake);
     text-decoration-thickness: 0.1em;
@@ -416,7 +420,7 @@ iframe.youtube {
 }
 
 @media (max-width: 50rem) {
-  #page-guild>div>div, #page-newsletter>div>div {
+  .newsletter-form>div {
     flex-direction: column;
     form {
       align-self: stretch;
@@ -431,31 +435,35 @@ iframe.youtube {
   flex-direction: column;
   justify-content: stretch;
   >* {
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-5);
   }
 }
 
 .hero-box {
-  margin-top: var(--space-6);
+  margin-top: var(--space-5);
   position: relative;
-  text-align: right;
+  .watermark {
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    height: 84%;
+    --opacity: 40%;
+    --fill: var(--hot-pink);
+  }
+}
+
+.cta-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  color: var(--chocolate);
   * {
     line-height: 1em;
   }
   h1 {
     line-height: 0.9em;
-  }
-  &>div {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    position: absolute;
-    bottom: var(--space-3);
-    right: var(--space-3);
-    padding: var(--space-3);
-    background-color: alpha(from var(--milk) / 90%);
-    color: var(--chocolate);
-    outline: var(--thick-line) alpha(from var(--mustard) / 80%);
   }
   p {
     font-variant: small-caps;
@@ -472,14 +480,7 @@ iframe.youtube {
   .arrow {
     margin-left: 0.5em;
   }
-  .watermark {
-    position: absolute;
-    left: 7px;
-    bottom: 5px;
-    height: 84%;
-    --opacity: 40%;
-    --fill: var(--hot-pink);
-  }
+
 }
 
 .page-section {
@@ -491,18 +492,13 @@ iframe.youtube {
 }
 
 #inspiring {
-  grid-template-columns: 1fr 1fr;
   img { filter: grayscale(1); }
 }
 #page-index #connections {
-  margin-bottom: var(--space-5);
-  grid-template-columns: 1fr 1fr;
 }
 #from-the-archives {
   padding: var(--space-5) 0 var(--space-4) 0;
-  margin-bottom: var(--space-4);
   &>section {
-    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
   }
   nav {
@@ -513,13 +509,64 @@ iframe.youtube {
 }
 
 #finest div {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   img {
     min-width: 0%;
     min-height: var(--space-8);
     width: 100%;
     aspect-ratio: 9/16;
-    object-fit: cover;
+  }
+}
+
+#venue {
+  display: grid;
+  gap: var(--space-3);
+}
+
+#organiser {
+  margin-bottom: var(--space-4);
+  img {
+    transform: scaleX(-1);
+  }
+}
+
+#final-cta {
+  margin-bottom: var(--space-3);
+}
+
+@media (min-width: 50rem) {
+  .hero-box>div {
+    position: absolute;
+    bottom: var(--space-3);
+    right: var(--space-4);
+  }
+  .hero-box .cta-box {
+    text-align: right;
+    outline: var(--thick-line) alpha(from var(--mustard) / 80%);
+    background-color: alpha(from var(--milk) / 90%);
+  }
+  #inspiring {
+    grid-template-columns: 1fr 1fr;
+  }
+  #page-index #connections {
+    grid-template-columns: 1fr 1fr;
+  }
+  #from-the-archives {
+    &>section {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  #finest div {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #venue {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #organiser {
+    grid-template-columns: 1fr 3fr;
   }
 }

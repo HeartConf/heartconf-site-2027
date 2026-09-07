@@ -10,19 +10,7 @@ full_width: true
     <img alt="" src="images/hero-image.webp"></img>
     <svg class="watermark" viewBox="0 0 100 100"><use href="#svg-hc-watermark"/></svg> 
   </figure>
-  <div>
-    <h1 class="hc-name">HeartConf</h1>
-    <p>18th-19th August 2027</p>
-    <p>Mechelen · Belgium</p>
-    <div>
-      <a class="btn" href="#">
-        <span>Buy Tickets</span> 
-        <svg class="arrow" style="height: 0.7em; display: inline-box" viewbox="0 0 20 7.5">
-          <path style="fill: var(--chocolate);" d="M 13.457492 0 V 3.1408107 H 0 v 1.2187972 h 13.457492 v 3.140392 L 20 3.7502094 Z">
-        </svg>
-      </a>
-    </div>
-  </div>
+  {% include cta_box.html %}
 </section>
 
 <section class="fancy-headings page-section full-col" id="inspiring">
@@ -90,6 +78,38 @@ full_width: true
   </nav>
 </div>
 
+<section id="venue" class="full-col fancy-headings">
+  <div>
+    <h2>The Venue</h2>
+    <p>The Lamot Congress and Heritage center will be our home during the
+    conference. With a blend of modern and old industrial, this converted old
+    brewery offers a beautiful auditorium for the main track, as well as eight
+    other spaces, which we'll use for breaks, workshops, our signature Community
+    Hall (aka "the reified hallway track"), and our brand new lightning talk
+    open mic, the Renegade Stage!</p>
+  </div>
+  <figure>
+    <img alt="The Lamot Congress Center" src="images/lamot.jpg"></img>
+    <figcaption>The Congress Center</figcaption>
+  </figure>
+  <figure class="variant">
+    <img alt="The Lamot Congress Center" src="images/lamot2.webp"></img>
+    <figcaption>Community Hall</figcaption>
+  </figure>
+  <figure>
+    <img alt="The auditorium" src="images/lamot3.webp"></img>
+    <figcaption>Auditorium</figcaption>
+  </figure>
+  <figure class="variant">
+    <img alt="Three historic wooden houses in Mechelen" src="images/mechelen_old_houses.jpg"></img>
+    <figcaption>The historic city of Mechelen</figcaption>
+  </figure>
+  <figure>
+    <img alt="The bar" src="images/bar.webp"></img>
+    <figcaption>Bar & Sponsor expo</figcaption>
+  </figure>
+</section>
+
 <section class="fancy-headings page-section" id="finest">
   <h2 class="full-col">Belgium's Finest</h2>
   <p class="full-col">Belgians take pride in their culinary traditions. We make
@@ -107,28 +127,28 @@ full_width: true
   </div>
 </section>
 
-<section>
-  <figure>
-    <img alt="The Lamot conference center" src="images/lamot.jpg"></img>
-    <figcaption>The conference center</figcaption>
-  </figure>
-</section>
-
-<section>
-  <figure class="variant">
-    <img alt="Three historic wooden houses in Mechelen" src="images/mechelen_old_houses.jpg"></img>
-    <figcaption>The historic city of Mechelen</figcaption>
-  </figure>
-</section>
 
 <div class="full-col">
   {% include newsletter.html %}
 </div>
 
 <section class="fancy-headings page-section full-col" id="organiser">
-  <h2></h2>
   <figure>
-    <img src="images/connections.webp">
-
+    <img src="images/organiser.webp">
+    <figcaption>Arne Brasseur</figcaption>
   </figure>
+  <div>
+    <h2>Meet your organiser</h2>
+    <p>
+      HeartConf isn't a faceless, corporate mega-event — it's a labour of love. It is
+      my greatest pleasure to bring this community together, to invite people to
+      my home country, and to hear from people about how it touched their lives.
+      That is what keeps me going. Thank you to everyone who helps to make this
+      event the special place that it is. See you at HeartConf!
+    </p>
+  </div>
+</section>
+
+<section class="fancy-headings page-section full-col" id="final-cta">
+  {% include cta_box.html %}
 </section>

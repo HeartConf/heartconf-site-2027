@@ -1,5 +1,5 @@
 ---
-title: Contact | HeartConf'25
+title: Contact
 permalink: /contact
 layout: default
 ---
