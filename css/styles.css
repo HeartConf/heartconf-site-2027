@@ -259,12 +259,12 @@ img {
   --bg-color: var(--chocolate);
   color: var(--text-color);
   background-color: var(--bg-color);
-  :where(a) {
-    color: var(--bubble-gum);
-    text-decoration-color: var(--cheesecake);
-    text-decoration-thickness: 0.1em;
-    text-underline-offset: -0.033em;
-  }
+}
+:where(.invert a) {
+  color: var(--bubble-gum);
+  text-decoration-color: var(--cheesecake);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: -0.033em;
 }
 
 /* automatically applied to main for .md files, make sure we have nice typography */
