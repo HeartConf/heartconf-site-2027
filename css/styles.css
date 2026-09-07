@@ -233,9 +233,9 @@ input[type=text], input[type=email] {
 
 input, button, .btn {
   &:active {
-    background-color: var(--bubble-gum);
+    background-color: alpha(from var(--mustard) / 50%);
     transform: translateY(4px);
-    box-shadow: -4px 4px 0 0 var(--mustard);
+    box-shadow: -5px 5px 0 0 var(--mustard);
   }
 }
 
