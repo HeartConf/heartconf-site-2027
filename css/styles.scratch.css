@@ -1,0 +1,35 @@
+#page-index {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  header {
+    margin-top: var(--space-4);
+  }
+  .hero-logo {
+    width: var(--space-8);
+  }
+  h1 {
+    font-size: var(--text-fluid-6);
+    margin-top: 1rem;
+  }
+  .shout {
+    font-size: var(--text-fluid-2);
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+  }
+  figure {
+    flex: 1 1 40%;
+  }
+
+  section + section {
+    margin-top: var(--space-4);
+  }
+}

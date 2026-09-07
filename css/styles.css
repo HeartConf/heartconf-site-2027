@@ -24,6 +24,7 @@
   --hot-pink:    #f51e92;
   --candy-floss: #cd4a92;
   --bubble-gum:  #eab3d0;
+  --black:       #000;
 
   --mustard-cake: color-mix(in oklab, var(--cheesecake) 30%, var(--mustard) 70%);
 
@@ -38,8 +39,8 @@
   /* utopia-clamp */
   --text-fluid-0000: clamp(0.512rem, 0.475429rem + 0.182857vw, 0.64rem);
   --text-fluid-000: clamp(0.64rem, 0.594286rem + 0.228571vw, 0.8rem);
-  --text-fluid-00: clamp(0.8rem, 0.742857rem + 0.285714vw, 1.rem);
-  --text-fluid-0: clamp(1.rem, 0.928571rem + 0.357143vw, 1.25rem);
+  --text-fluid-00: clamp(0.8rem, 0.742857rem + 0.285714vw, 1.0rem);
+  --text-fluid-0: clamp(1.0rem, 0.928571rem + 0.357143vw, 1.25rem);
   --text-fluid-1: clamp(1.25rem, 1.160714rem + 0.446429vw, 1.5625rem);
   --text-fluid-2: clamp(1.5625rem, 1.450893rem + 0.558036vw, 1.953125rem);
   --text-fluid-3: clamp(1.953125rem, 1.813616rem + 0.697545vw, 2.441406rem);
@@ -68,11 +69,15 @@
   --space-11: clamp(43.248779rem, 37.070382rem + 30.891985vw, 64.873169rem);
   --space-12: clamp(64.873169rem, 55.605573rem + 46.337978vw, 97.309753rem);
 
-  color: var(--chocolate);
-  background-color: var(--cheesecake);
+  --text-color: var(--chocolate);
+  --bg-color: var(--cheesecake);
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-family: var(--font-body);
   font-size: 100%;
   line-height: var(--base-line-height);
+  accent-color: var(--hot-pink);
 }
 
 h1 { font-size: var(--text-fluid-5); }
@@ -120,8 +125,6 @@ a {
 
 footer {
   display: flex;
-  background-color: var(--chocolate);
-  color: var(--cheesecake);
   padding: var(--space-2) 0 var(--space-4) 0;
   border-top: var(--thick-line) var(--mustard);
   a, a:visited {
@@ -201,30 +204,38 @@ form {
 *:focus-visible {
   outline: var(--focus-outline);
 }
-a, input, button {
-  &:active {
-    transform: translateY(2px);
-  }
-}
 
 input[type=text], input[type=email] {
   background-color: var(--milk);
   font-size: var(--text-000);
-  border: none;
+  border: 2px solid var(--chocolate);
   border-radius: var(--space-0);
   padding: var(--space-00) var(--space-1);
 }
 
-button, input[type=submit] {
-  background-color: var(--mustard);
-  text-decoration: none;
-  border: none;
-  border-radius: var(--space-1);
-  padding: var(--space-0) var(--space-1);
+.btn, button, input[type=submit] {
   color: var(--chocolate);
+  background-color: var(--cheesecake);
+  text-decoration: none;
+  /* border: none; */
+  /* border-radius: var(--space-1); */
+  padding: var(--space-0) var(--space-1);
   font-weight: 900;
-  &:hover {
-    background-color: var(--egg-yolk);
+  &:where(:hover) {
+    background-color: var(--bubble-gum);
+    transform: translateY(1px);
+    box-shadow: -5px 5px 0 0 var(--mustard);
+  }
+
+  border: var(--thick-line) var(--black);
+  box-shadow: -6px 6px 0 0 var(--mustard);
+}
+
+input, button, .btn {
+  &:active {
+    background-color: var(--bubble-gum);
+    transform: translateY(4px);
+    box-shadow: -4px 4px 0 0 var(--mustard);
   }
 }
 
@@ -233,10 +244,23 @@ button, input[type=submit] {
 */
 
 /* single centered container, used on main, footer, etc */
-.util-1col {
+.full-col {
   max-width: var(--space-12);
   margin: 0 auto;
   padding: 0 var(--space-0);
+}
+
+.invert {
+  --text-color: var(--cheesecake);
+  --bg-color: var(--chocolate);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  a {
+    color: var(--bubble-gum);
+    text-decoration-color: var(--cheesecake);
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: -0.033em;
+  }
 }
 
 /* automatically applied to main for .md files, make sure we have nice typography */
@@ -247,7 +271,11 @@ button, input[type=submit] {
   }
   h2 {
     margin-top: var(--space-1);
-    margin-bottom: var(--space-0);
+    margin-bottom: var(--space-00);
+  }
+  h3 {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-000);
   }
   h1, h1::after, h2, h2::after {
     text-decoration-line: underline;
@@ -266,24 +294,38 @@ button, input[type=submit] {
   }
 }
 
+.hc-name {
+  font-family: var(--font-brand-name);
+}
+
 /*-----------------------------------------
  Specific page elements / components
 */
 
 .primary-nav {
   background-color: var(--mustard);
-  font-size: var(--text-fluid-3);
+  font-size: var(--text-fluid-2);
   border-bottom: var(--thick-line) var(--chocolate);
   font-weight: 900;
   padding: var(--space-1);
+  line-height: 1em;
+  .where-when {
+    font-weight: 400;
+    font-size: var(--text-fluid-0);
+    font-variant: small-caps;
+    line-height: 1em;
+  }
   ul {
     max-width: var(--space-12);
     margin: 0 auto;
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    gap: var(--space-1) var(--space-4);
+    justify-content: flex-end;
+    gap: var(--space-1) var(--space-3);
     flex-wrap: wrap;
+    &>:first-child {
+      flex: 1;
+    }
   }
   li {
     display: flex;
@@ -303,8 +345,9 @@ button, input[type=submit] {
     }
   }
   .hc-logo {
-    height: 1.25em;
-    margin-bottom: -0.125em;
+    height: 3.75rem;
+    width: 3.75rem;
+    margin-bottom: -0.125rem;
   }
 }
 
@@ -336,7 +379,7 @@ button, input[type=submit] {
 }
 
 iframe.youtube {
-  width: var(--space-10);
+  width: 100%;
   max-width: 85vw;
   aspect-ratio: 16/9;
 }
@@ -345,57 +388,19 @@ iframe.youtube {
  Specific pages
 */
 
-#page-index {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-0);
-  header {
-    margin-top: var(--space-4);
-  }
-  .hero-logo {
-    width: var(--space-8);
-  }
-  h1 {
-    font-size: var(--text-fluid-6);
-    margin-top: 1rem;
-  }
-  .shout {
-    font-size: var(--text-fluid-2);
-  }
 
-  .images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--space-2) var(--space-3);
-  }
-  figure {
-    flex: 1 1 40%;
-  }
-
-  section + section {
-    margin-top: var(--space-4);
-  }
-}
-
-#page-newsletter, #page-guild {
-  &>div>div {
+.newsletter-form {
+  &>div {
     display:flex;
     gap: var(--space-1);
   }
   form {
-    color: var(--cheesecake);
-    background-color: var(--chocolate);
     font-size: var(--text-fluid-1);
     padding: var(--space-1);
-    border-radius: var(--space-0);
     min-width: min(40vw, 30rem);
     align-self: flex-start;
+    border: var(--thick-line) var(--chocolate);
   }
-
   label {
     display: flex;
     flex-direction: column;
@@ -403,10 +408,10 @@ iframe.youtube {
     width: 100%;
     align-items: stretch;
   }
-
   input[type=submit] {
     margin-top: var(--space-0);
     font-size: var(--text-fluid-1);
+    align-self: flex-end;
   }
 }
 
@@ -416,5 +421,105 @@ iframe.youtube {
     form {
       align-self: stretch;
     }
+  }
+}
+
+/*********** Front page *******************/
+
+#page-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  >* {
+    margin-bottom: var(--space-6);
+  }
+}
+
+.hero-box {
+  margin-top: var(--space-6);
+  position: relative;
+  text-align: right;
+  * {
+    line-height: 1em;
+  }
+  h1 {
+    line-height: 0.9em;
+  }
+  &>div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    position: absolute;
+    bottom: var(--space-3);
+    right: var(--space-3);
+    padding: var(--space-3);
+    background-color: alpha(from var(--milk) / 90%);
+    color: var(--chocolate);
+    outline: var(--thick-line) alpha(from var(--mustard) / 80%);
+  }
+  p {
+    font-variant: small-caps;
+    margin: 0;
+    font-weight: 600;
+  }
+  a {
+    font-size: var(--text-fluid-1);
+    color: var(--black);
+    &:visited {
+      color: var(--black);
+    }
+  }
+  .arrow {
+    margin-left: 0.5em;
+  }
+  .watermark {
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    height: 84%;
+    --opacity: 40%;
+    --fill: var(--hot-pink);
+  }
+}
+
+.page-section {
+  display: grid;
+  gap: var(--space-4);
+  >* {
+    min-width: 0;
+  }
+}
+
+#inspiring {
+  grid-template-columns: 1fr 1fr;
+  img { filter: grayscale(1); }
+}
+#page-index #connections {
+  margin-bottom: var(--space-5);
+  grid-template-columns: 1fr 1fr;
+}
+#from-the-archives {
+  padding: var(--space-5) 0 var(--space-4) 0;
+  margin-bottom: var(--space-4);
+  &>section {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  nav {
+    margin-top: var(--space-3);
+    text-align: right;
+    font-size: var(--text-fluid-2);
+  }
+}
+
+#finest div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  img {
+    min-width: 0%;
+    min-height: var(--space-8);
+    width: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
   }
 }

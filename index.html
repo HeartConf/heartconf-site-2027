@@ -2,37 +2,111 @@
 layout: default
 title: HeartConf'27
 permalink: /
+full_width: true
 ---
 
-<header>
-  <svg class="hero-logo hc-logo" viewBox="0 0 100 100"><use href="#svg-hc-logo"/></svg>
-  <h1 class="brand-name">HeartConf'27</h1>
-</header>
-
-<section class="shout">
-  <p>A conference for programmers by programmers.</p>
-  <p>Mechelen, Belgium, 18 & 19 August, 2027</p>
-  <p><a href="/newsletter">Sign up for the newsletter!</a></p>
-</section>
-
-<section class="images">
+<section class="hero-box full-col"> 
   <figure>
-    <img alt="The Lamot conference center" src="images/lamot.jpg"></img>
-    <figcaption>The conference center</figcaption>
+    <img alt="" src="images/hero-image.webp"></img>
+    <svg class="watermark" viewBox="0 0 100 100"><use href="#svg-hc-watermark"/></svg> 
   </figure>
+  <div>
+    <h1 class="hc-name">HeartConf</h1>
+    <p>18th-19th August 2027</p>
+    <p>Mechelen · Belgium</p>
+    <div>
+      <a class="btn" href="#">
+        <span>Buy Tickets</span> 
+        <svg class="arrow" style="height: 0.7em; display: inline-box" viewbox="0 0 20 7.5">
+          <path style="fill: var(--chocolate);" d="M 13.457492 0 V 3.1408107 H 0 v 1.2187972 h 13.457492 v 3.140392 L 20 3.7502094 Z">
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="fancy-headings page-section full-col" id="inspiring">
+  <div>
+    <h2>A different kind of developer conference</h2>
+    <p>
+      HeartConf is an experience, a unique gathering of curious, creative, and
+      open minded people. A community of practice eager to share, and to learn.
+      Through an eclectic line-up of speakers from within and outside of the
+      field, we aim to inspire, and to spark the conversations that matter in
+      the current moment.
+    </p>
+    <p>
+      Read more about our <a href="/about">vision behind the conference</a>.
+    </p>
+  </div>
   <figure class="variant">
-    <img alt="Three historic wooden houses in Mechelen" src="images/mechelen_old_houses.jpg"></img>
-    <figcaption>The historic city of Mechelen</figcaption>
+    <img src="images/inspiring.webp">
   </figure>
 </section>
 
-<section class="keynotes">
+<section class="fancy-headings page-section full-col" id="connections">
+  <figure>
+    <img src="images/connections.webp">
+  </figure>
   <div>
-    <h3>2019 Opening Keynote</h3>
-    <iframe class="youtube" src="https://www.youtube.com/embed/-IGViUlbemo?si=P5f2gG4J179i9LN2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div>
-    <h3>2024 Opening Keynote</h3>
-    <iframe class="youtube" src="https://www.youtube.com/embed/MJzV0CX0q8o?si=738lvbQ1baFvhKPl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Create lasting connections</h2>
+    <p>
+      You can watch a lot of great talks online, but there's no substitute for
+      connecting with people face to face. With extended breaks between talks, and
+      a wide range of fringe activities before, during, and after the
+      conference, we make sure there is breathing room, so attendees can truly
+      connect, and create faithful encounters.
+    </p>
   </div>
 </section>
+
+<div id="from-the-archives" class="invert">
+  <section class="fancy-headings page-section full-col">
+    <h2>From the archives</h2>
+    <div>
+      {% include youtube.html id="-IGViUlbemo" %}
+      <p>Yulia Statsev — To Loosen Up, to Put Together</p>
+    </div>
+    <div>
+      {% include youtube.html id="MJzV0CX0q8o" %}
+      <p>Lu Wilson — How to be Open</p>
+    </div>
+    <div>
+      {% include youtube.html id="bTPzvX9-6VU" %}
+      <p>Chris Adams — What You Can Do When Software is Heating the World</p>
+    </div>
+    <div>
+      {% include youtube.html id="KKSexkjl6pw" %}
+      <p>James Reeves — Living With Legacy Code</p>
+    </div>
+    <div>
+      {% include youtube.html id="qyhjok21Y3o" %}
+      <p>Connie — Creating a Language with Racket</p>
+    </div>
+  </section>
+  <nav class="full-col">
+    <a href="https://www.youtube.com/playlist?list=PLhYmIiHOMWoEgJEvgkmUe8D0agxy_T2vR">all 2019 videos</a> ·
+    <a href="https://www.youtube.com/playlist?list=PLhYmIiHOMWoGI6sCm85EAIhk-Lm9GUFpo">all 2024 videos</a>
+  </nav>
+</div>
+
+<section class="fancy-headings page-section" id="finest">
+  <h2 class="full-col">Belgium's Finest</h2>
+  <p class="full-col">Belgians take pride in their culinary traditions. We make
+    sure you have tasty, wholesome food throughout the conference, to keep those
+    brain cells firing.</p>
+  <div>
+    <img src="images/finest1.webp" />
+    <img src="images/finest2.webp" />
+    <img src="images/finest3.webp" />
+    <img src="images/finest4.webp" />
+    <img src="images/finest5.webp" />
+    <img src="images/finest6.webp" />
+    <img src="images/finest7.webp" />
+    <img src="images/finest8.webp" />
+  </div>
+</section>
+
+<div class="full-col">
+  {% include newsletter.html %}
+</div>
