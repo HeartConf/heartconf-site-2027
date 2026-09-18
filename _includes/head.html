@@ -1,30 +1,33 @@
+{% assign description = "HeartConf, 18-19 August 2027, Mechelen, Belgium" %}
+{% assign site_url = "https://2027.heartconf.eu/" %}
+{% assign site_name = "HeartConf'27" %}
 <head>
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
   <link rel="stylesheet" type="text/css" href="/css/styles.css?{{ site.time | date: '%s' }}">
-  <title>{{ page.title | escape }}{% if page.permalink != "/"  %} | HeartConf'27{% endif %}</title>
+  <title>{{ page.title | escape }}{% if page.permalink != "/"  %} | {{ site_name }}{% endif %}</title>
 
-  <meta name="description" content="HeartConf Developer Conference, 27-28 August, Belgium">
-  <link rel="canonical" href="https://2027.heartconf.eu/">
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ site_url }}">
   <meta name="fediverse:creator" content="@heartconf@functional.cafe">
 
   <!-- Open Graph / Facebook / LinkedIn / Bluesky / Mastodon -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://2027.heartconf.eu/">
-  <meta property="og:title" content="HeartConf'27">
-  <meta property="og:description" content="Developer Conference, 27-28 August, Belgium">
+  <meta property="og:url" content="{{ site_url }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="https://2027.heartconf.eu/images/social_media_preview.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="HeartConf'27 — Developer Conference, 27–28 August, Belgium">
-  <meta property="og:site_name" content="HeartConf">
+  <meta property="og:image:alt" content="{{ description }}">
+  <meta property="og:site_name" content="{{ site_name }}">
   <meta property="og:locale" content="en_BE">
 
   <!-- Twitter Card (also used by Bluesky and LinkedIn as a fallback) -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HeartConf'27">
-  <meta name="twitter:description" content="Developer Conference, 27-28 August, Belgium">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:image" content="https://2027.heartconf.eu/images/social_media_preview.png">
-  <meta name="twitter:image:alt" content="HeartConf'27 — Developer Conference, 27–28 August, Belgium">
+  <meta name="twitter:image:alt" content="{{ description }}">
 </head>
