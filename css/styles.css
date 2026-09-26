@@ -213,6 +213,14 @@ input[type=text], input[type=email] {
   padding: var(--space-00) var(--space-1);
 }
 
+altcha-widget {
+    width: 100%;
+    --altcha-max-width: 100%;
+    --altcha-border-width: 2px;
+    --altcha-color-border: var(--chocolate);
+    --altcha-border-radius: var(--space-0);
+}
+
 .btn, button, input[type=submit] {
   color: var(--black);
   background-color: var(--cheesecake);
