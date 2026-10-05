@@ -2,31 +2,37 @@
 title: Become a Sponsor
 permalink: /sponsor
 layout: default
+full_width: true
 ---
 
 # Become a Sponsor 
 
-HeartConf brings together 350 passionate and talented developers. We lift people
-out of their day to day, and into a space of new possibilities, eager to
+HeartConf brings together **350 passionate and talented developers**. We lift people
+out of their day-to-day, and into a space of new possibilities, eager to
 discover new ideas and impressions, and to connect with others.
 
-As a sponsor you get a front row seat. We treat our partners as co-creators, who
-together with us shape the event, and people's experiences. Sponsoring isn't
+As a sponsor you get a front row seat. **We treat our partners as co-creators**,
+who together with us shape the event, and people's experiences. Sponsoring isn't
 just advertising, it's inviting people to actively engage with your company and
 brand. Various fringe activities are a big part of what makes HeartConf special,
 and give sponsors a chance to make a unique impression.
 
 With our Platinum and Diamond tiers we turn this idea up to eleven. Instead of a
-booth, you get a 30~45m² zone of the venue that is all yours to turn into a
-destination, an experience, all based on the vibe you want to be associated
-with.
+booth, you get **a dedicated zone of the venue** that is all yours to turn into
+a destination, an experience, all based on the vibe you want to be associated
+with. We work with you and our [decor partner](https://www.dedecorkliniek.be/)
+to turn this into something special.
 
-Sponsorship comes with Partner tickets, with recognisable badges. These make you
+Sponsorship comes with **Partner tickets**, with recognisable badges. These make you
 instantly stand out as a pillar of the event, and provide full access, including
 to surrounding social events.
 
 To make sure sponsorship is within reach for even the most stringent budgets,
-packages start already at €750.
+**packages already start at €750**.
+
+<a class="btn" href="/contact">Get in touch!</a>
+
+![Floorplan with sponsor zone indications](images/sponsor_floorplan.webp)
 
 ## Supporter (€750)
 
@@ -61,14 +67,18 @@ This tier and above also gets you included in our Virtual Swag mailing. After
 the conference, we mail our attendees a selection of virtual goodies (discount
 links, invite codes) and job openings.
 
-- **Rollup banner at the entrance**
+- **Rollup banner at the entrance** provided by you
 - **Bigger and more prominent logo placement** on website/email/recordings/screen between breaks
-- **One shared** and **one dedicated** social media post on all of our channels
+- One shared and **one dedicated** social media post on all of our channels
 - Add your goodies or job ads to the **Virtual Swag** email
 - One Partner ticket included
 - Option to buy **four more Partner tickets** at a **10% discount**
 
+<section markdown="1">
+
 ## Silver (€4,500)
+
+![](images/silver_table.jpg){:class="side-img"}
 
 With Silver your banner at the entrance gets upgraded to a table + rollup banner
 in the central space where refreshments are served during breaks. Our standard
@@ -82,28 +92,37 @@ dedicated Partner Track.
 - **Medium sized logo** and **better placement** on website/email/recordings/screen between breaks
 - **Two dedicated social media posts** on all of our channels
 - **Programme a session on the Partner Track**
+- Add your goodies or job ads to the Virtual Swag email
 - **Two Partner tickets** included
-- Option to buy **eight more Partner tickets** at a **20% discount**
+- Option to buy **six more Partner tickets** at a **20% discount**
+
+</section>
+<section markdown="1">
 
 ## Gold (€7,500)
 
+![](images/gold_table.jpg){:class="side-img"}
+
 The deluxe booth package, and a major upgrade over Silver. With Gold you get
-more than twice the amount of floor space for your booth, and a custom made
-backdrop with your branding. Stand out like a beacon! Our decor partner can work
-with you to upgrade your booth.
+more than twice the amount of floor space for your booth, and we get a custom
+backdrop made with your branding. Stand out like a beacon! Our decor partner can
+work with you to upgrade your booth.
 
 Gold also includes a seat at the Speaker Dinner, a fine dining experience the
 evening before the conference, and an opportunity to connect and network with
 the people who are making the discourse.
 
-- **A 2x5 area for your booth in the bar area, including a custom made backdrop**, customisation possible
+- **A 2x5m area for your booth in the bar area, including a custom made backdrop**, customisation possible
 - **Large** sized logo and better placement on website/email/recordings/screen between breaks
-- **Three** dedicated social media posts on all of our channels, spread out the months before the conference
+- **Three** dedicated social media posts on all of our channels, spread out in the months leading up to the conference
 - Programme a session on the Partner Track
 - Add your goodies or job ads to the Virtual Swag email
 - **Three Partner tickets** included
-- Option to buy **ten more Partner tickets** at a **30% discount**
+- Option to buy **eight more Partner tickets** at a **30% discount**
 - **One seat at the Speaker Dinner fine dining experience**
+
+</section>
+
 
 ## Platinum (€11,500)
 
@@ -113,7 +132,8 @@ visit. Together with us and our decor partner you decide how you want to shape
 this. You can have a photo booth, retro video games, or massage chairs, all in
 your house brand and colors.
 
-We have different zones available, of 30~35m², all close to foot traffic.
+We have three different zones available, all approximately 35m², all close to
+foot traffic.
 
 Of course as a Platinum partner we make sure you are noticed elsewhere as well.
 Big prominent placement on our materials, online and in the venue, a shoutout
@@ -121,15 +141,17 @@ from the presenter at the start and end of each conference day, and a full
 dedicated sponsor slide shown during breaks, and at the start of the video
 recordings.
 
-- **A 30~35m² dedicated zone for you to create a custom brand experience**
+- **A 35m² dedicated zone for you to create a custom brand experience**
 - **Very Large** sized logo on website/email/recordings/screen between breaks
 - Logo on a **Dedicated Slide** during breaks and on the recorded videos
-- **Four** dedicated social media posts on all of our channels, spread out the months before the conference
+- **Four** dedicated social media posts on all of our channels, spread out in the months leading up to the conference
 - Programme a session on the Partner Track
 - Add your goodies or job ads to the Virtual Swag email
 - **Four Partner tickets** included
-- Option to buy **ten more Partner tickets** at a **45% discount**
+- Option to buy **ten more Partner tickets** at a **40% discount**
 - **Two seats at the Speaker Dinner** fine dining experience
+
+![Platinum zones photos](images/platinum_zones.webp)
 
 ## Diamond (€19,000)
 
@@ -146,15 +168,40 @@ and when going between the auditorium and the bar area where refreshments are
 served. We place your brand and company quite literally at the center of the
 conference experience.
 
-- **A 42m² brand zone at the central hub of the venue**
+- **A 54m² brand zone at the central hub of the venue**
 - **Rollup banners on each side of the stage**
 - **Your logo visible on the video frame during the live stream**
 - **Your logo visible on the video frame on recorded talks**
-- **Six** dedicated social media posts on all of our channels, spread out the months before the conference
-- **Four Partner tickets** included
-- Option to buy **twelve more Partner tickets** at a **60% discount**
+- **Six** dedicated social media posts on all of our channels, spread out in the months leading up to the conference
+- **Six Partner tickets** included
+- Option to buy **twelve more Partner tickets** at a **50% discount**
 - **Four seats at the Speaker Dinner** fine dining experience
 - Very Large sized logo on website/email/recordings/screen between breaks
 - Logo on a dedicated slide during breaks and on the recorded videos
 - Programme a session on the Partner Track
 - Add your goodies or job ads to the Virtual Swag email
+
+![Diamond zone photo and floorplan](images/diamond_zone.webp)
+
+## Overview
+
+<div id="sponsor-table">
+<table>
+{% for row in site.data.sponsor_table %}
+{% if forloop.first %}
+<tr>
+{% for pair in row %}
+<th>{{ pair[0] }}</th>
+{% endfor %}
+</tr>
+{% endif %}
+
+{% tablerow pair in row %}
+{{ pair[1] }}
+{% endtablerow %}
+{% endfor %}
+</table>
+</div>
+
+**Ready to explore the possibilities?** <br> **You got questions, or you're ready to reserve your spot?**
+<a class="btn" href="/contact">Get in touch!</a>
