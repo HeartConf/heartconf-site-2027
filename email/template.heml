@@ -33,6 +33,9 @@
         max-width: 500px;
         margin: 100px auto;
       }
+      #footer {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -42,6 +45,17 @@
       <p>August still feels ages away, but organising a conference is a long
         process. We'll be grateful in the hectic months leading up to the
         conference for all the groundwork we're doing right now.</p>
+
+      <div id="sponsors">
+      </div>
+
+      <div id="footer">
+            <p>
+          <a href="{{ UnsubscribeURL }}" style="color: #888;">{{ L.T "email.unsub" }}</a>
+          &nbsp;&nbsp;
+          <a href="{{ MessageURL }}" style="color: #888;">{{ L.T "email.viewInBrowser" }}</a>
+        </p>
+      </div>
     </container>
   </body>
 </heml>
