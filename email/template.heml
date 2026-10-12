@@ -1,9 +1,9 @@
 <heml>
   <head>
-    <subject>HeartConf</subject>
+    <subject>{{ .Campaign.Subject }}</subject>
     <preview></preview>
     <style>
-      :where(html) {
+      html {
         --milk:        #f6f6f3;
         --cheesecake:  #f3f2ee;
         --mustard:     #e1c451;
@@ -17,43 +17,92 @@
         --text-color: var(--chocolate);
         --bg-color: var(--cheesecake);
         --base-line-height: 1.5;
-        color: var(--text-color);
         background-color: var(--bg-color);
         line-height: var(--base-line-height);
         accent-color: var(--hot-pink);
       }
       * {
+        color: var(--text-color);
         font-family: "Outfit", "Poppins", "Century Gothic", "Apple Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       container {
-        max-width: 800px;
+        max-width: 1000px;
       }
-
+      p {
+        line-height: var(--base-line-height);
+        font-size: 125%;
+      }
+      h1 {
+        font-size: 200%;
+      }
+      h2 {
+        font-size: 175%;
+      }
+      h3 {
+        font-size: 150%;
+      }
       #header-image {
         max-width: 500px;
         margin: 100px auto;
       }
       #footer {
         text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      #footer p {
+        color: #777;
+      }
+      #footer a {
+        color: var(--egg-yolk);
+      }
+      #sponsors {
+        margin: 100px auto;
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <container>
-      <img id="header-image" src="header.png"></img>
+      <img id="header-image" src="https://2027.heartconf.eu/images/email_header.png">
       <h1>A First Big Update</h1>
       <p>August still feels ages away, but organising a conference is a long
         process. We'll be grateful in the hectic months leading up to the
         conference for all the groundwork we're doing right now.</p>
 
       <div id="sponsors">
+        <h2>Iron Sponsors</h2>
+        <row style="width: 400px; margin: 0 auto;">
+          <column>
+            <a href="https://nextjournal.com/">
+              <img class="iron" alt="Nextjournal logo" src="https://2027.heartconf.eu/images/sponsor_logos/nextjournal.png">
+            </a>
+          </column>
+          <!-- <column> -->
+          <!--   <a href="https://nextjournal.com/"> -->
+          <!--     <img class="iron" alt="Nextjournal logo" src="https://2027.heartconf.eu/images/sponsor_logos/nextjournal.png"> -->
+          <!--   </a> -->
+          <!-- </column> -->
+        </row>
       </div>
-
+      {{ template "content" . }}
+      <row>
+        <column>
+        </column>
+      </row>
+      
       <div id="footer">
-            <p>
-          <a href="{{ UnsubscribeURL }}" style="color: #888;">{{ L.T "email.unsub" }}</a>
+        <p>
+          Copyright &copy; 2026 Magpie Solutions. All rights reserved.
+          You are receiving this email because you signed up for the HeartConf newsletter on our website.
+        </p>
+        <p>
+          Our contact address: <a href="mailto:orga@heartconf.eu">Orga@heartconf.eu</a>
+        </p>
+        <p>
+          <a href="{{ UnsubscribeURL }}">{{ L.T "email.unsub" }}</a>
           &nbsp;&nbsp;
-          <a href="{{ MessageURL }}" style="color: #888;">{{ L.T "email.viewInBrowser" }}</a>
+          <a href="{{ MessageURL }}">{{ L.T "email.viewInBrowser" }}</a>
         </p>
       </div>
     </container>

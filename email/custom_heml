@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+const path = require('path')
+const cssVariables = require('postcss-css-variables')
+
+const cssVarsElement = {
+  tagName: 'css-vars',
+  attrs: [],
+  children: true,
+  defaultAttrs: {},
+  preRender () {},
+  render () { return false },
+  postRender () {},
+  postcss: cssVariables({ preserve: false })
+}
+
+const hemlPath = require.resolve('heml')
+const heml = require(hemlPath)
+
+// inject the css-vars element into every render, then delegate to heml's own CLI
+require.cache[hemlPath].exports = function (contents, options = {}) {
+  return heml(contents, { ...options, elements: [cssVarsElement, ...(options.elements || [])] })
+}
+
+require(path.join(path.dirname(hemlPath), 'bin', 'heml.js'))
