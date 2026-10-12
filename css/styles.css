@@ -23,7 +23,7 @@
   --chocolate:   #3b0221;
   --hot-pink:    #f51e92;
   --candy-floss: #cd4a92;
-  --bubblegum:  #eab3d0;
+  --bubblegum:   #eab3d0;
   --black:       #000;
 
   --mustard-cake: color-mix(in oklab, var(--cheesecake) 30%, var(--mustard) 70%);
@@ -130,7 +130,6 @@ a {
 }
 
 footer {
-  display: flex;
   padding: var(--space-2) 0 var(--space-4) 0;
   border-top: var(--thick-line) var(--mustard);
   a, a:visited {

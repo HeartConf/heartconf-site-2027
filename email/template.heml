@@ -1,0 +1,47 @@
+<heml>
+  <head>
+    <subject>HeartConf</subject>
+    <preview></preview>
+    <style>
+      :where(html) {
+        --milk:        #f6f6f3;
+        --cheesecake:  #f3f2ee;
+        --mustard:     #e1c451;
+        --egg-yolk:    #d1ab13;
+        --aubergine:   #73005c;
+        --chocolate:   #3b0221;
+        --hot-pink:    #f51e92;
+        --candy-floss: #cd4a92;
+        --bubblegum:   #eab3d0;
+        --black:       #000;
+        --text-color: var(--chocolate);
+        --bg-color: var(--cheesecake);
+        --base-line-height: 1.5;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        line-height: var(--base-line-height);
+        accent-color: var(--hot-pink);
+      }
+      * {
+        font-family: "Outfit", "Poppins", "Century Gothic", "Apple Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      container {
+        max-width: 800px;
+      }
+
+      #header-image {
+        max-width: 500px;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <container>
+      <img id="header-image" src="header.png"></img>
+      <h1>A First Big Update</h1>
+      <p>August still feels ages away, but organising a conference is a long
+        process. We'll be grateful in the hectic months leading up to the
+        conference for all the groundwork we're doing right now.</p>
+    </container>
+  </body>
+</heml>
