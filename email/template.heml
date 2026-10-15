@@ -26,36 +26,49 @@
         font-family: "Outfit", "Poppins", "Century Gothic", "Apple Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       container {
-        max-width: 1000px;
+        max-width: 800px;
       }
       p {
         line-height: var(--base-line-height);
-        font-size: 125%;
+        font-size: 115%;
       }
       h1 {
-        font-size: 200%;
+        font-size: 300%;
+        margin-bottom: 25px;
       }
       h2 {
-        font-size: 175%;
+        font-size: 250%;
+        margin: 30px 0 20px 0
       }
       h3 {
-        font-size: 150%;
+        font-size: 200%;
+      }
+      button {
+        color: var(--mustard);
+        background: var(--chocolate);
+        padding: 15px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        border-radius: 5px;
       }
       #header-image {
         max-width: 500px;
         margin: 100px auto;
       }
+      #content {
+        margin-bottom: 100px;
+      }
       #sponsors {
-        margin: 100px auto;
         text-align: center;
       }
-      #sponsors img {
-        margin: 50px;
+      #sponsors h2 {
+        margin-bottom: 50px;
       }
       #contact {
         text-align: center;
         margin: 50px auto;
-        font-size: 175%;
+        font-size: 150%;
       }
       #footer {
         text-align: center;
@@ -71,53 +84,55 @@
     </style>
   </head>
   <body>
-    <container>
-      <img id="header-image" src="https://2027.heartconf.eu/images/email_header.png">
-      <!-- <h1>A First Big Update</h1> -->
-      <!-- <p>August still feels ages away, but organising a conference is a long -->
-      <!--   process. We'll be grateful in the hectic months leading up to the -->
-      <!--   conference for all the groundwork we're doing right now.</p> -->
+    <div style="padding:25px">
+      <container>
+        <img id="header-image" src="https://2027.heartconf.eu/images/email_header.png">
+        <!-- <h1>A First Big Update</h1> -->
+        <!-- <p>August still feels ages away, but organising a conference is a long -->
+        <!--   process. We'll be grateful in the hectic months leading up to the -->
+        <!--   conference for all the groundwork we're doing right now.</p> -->
 
-      <div id="content">
-        {{ template "content" . }}
-      </div>
+        <div id="content">
+          {{ template "content" . }}
+        </div>
 
-      <div id="sponsors">
-        <h2>Iron Sponsors</h2>
-        <row style="width: 400px; margin: 0 auto;">
-          <column>
-            <a href="https://nextjournal.com/">
-              <img class="iron" alt="Nextjournal logo" src="https://2027.heartconf.eu/images/sponsor_logos/nextjournal.png">
-            </a>
-          </column>
-          <column>
-            <a href="https://biotz.io/">
-              <img class="iron" alt="Biotz logo" src="https://2027.heartconf.eu/images/sponsor_logos/biotz.png">
-            </a>
-          </column>
-        </row>
-      </div>
+        <div id="sponsors">
+          <h2>Iron Sponsors</h2>
+          <row>
+            <column style="padding: 30px 50px 0 100px;">
+              <a href="https://nextjournal.com/">
+                <img class="iron" alt="Nextjournal logo" src="https://2027.heartconf.eu/images/sponsor_logos/nextjournal.png">
+              </a>
+            </column>
+            <column style="padding: 0 100px 0 50px;">
+              <a href="https://biotz.io/">
+                <img class="iron" alt="Biotz logo" src="https://2027.heartconf.eu/images/sponsor_logos/biotz.png">
+              </a>
+            </column>
+          </row>
+        </div>
 
-      <div id="contact">
-        <a href="https://functional.cafe/@heartconf">Mastodon</a> — 
-        <a href="https://bsky.app/profile/heartconf.eurosky.social">Bluesky</a> —
-        <a href="https://www.instagram.com/heartconf.eu/">Instagram</a>
-      </div>
+        <div id="contact">
+          <a href="https://functional.cafe/@heartconf">Mastodon</a> — 
+          <a href="https://bsky.app/profile/heartconf.eurosky.social">Bluesky</a> —
+          <a href="https://www.instagram.com/heartconf.eu/">Instagram</a>
+        </div>
 
-      <div id="footer">
-        <p>
-          Copyright &copy; 2026 Magpie Solutions. All rights reserved.
-          You are receiving this email because you signed up for the HeartConf newsletter on our website.
-        </p>
-        <p>
-          Our contact address: <a href="mailto:orga@heartconf.eu">Orga@heartconf.eu</a>
-        </p>
-        <p>
-          <a href="{{ UnsubscribeURL }}">{{ L.T "email.unsub" }}</a>
-          &nbsp;&nbsp;
-          <a href="{{ MessageURL }}">{{ L.T "email.viewInBrowser" }}</a>
-        </p>
-      </div>
-    </container>
+        <div id="footer">
+          <p>
+            Copyright &copy; 2026 Magpie Solutions. All rights reserved.
+            You are receiving this email because you signed up for the HeartConf newsletter on our website.
+          </p>
+          <p>
+            Our contact address: <a href="mailto:orga@heartconf.eu">Orga@heartconf.eu</a>
+          </p>
+          <p>
+            <a href="{{ UnsubscribeURL }}">{{ L.T "email.unsub" }}</a>
+            &nbsp;&nbsp;
+            <a href="{{ MessageURL }}">{{ L.T "email.viewInBrowser" }}</a>
+          </p>
+        </div>
+      </container>
+    </div>
   </body>
 </heml>

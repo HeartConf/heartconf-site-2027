@@ -6,11 +6,12 @@ groundwork we're doing right now.
 
 ## Our Home in the World, and on the Web
 
-The first step is to secure the venue. This is the canvas upon which we will
-create an awesome event. I visited the Lamot conference center last June and
-immediately knew it would make a great home for HeartConf. It's a beautiful
-venue — a mix of old industrial charm and modern architecture — in the middle of
-the city of Mechelen, surrounding by charming bars and pedestrian areas.
+The first step when organising an event is to secure the venue. This is the
+canvas upon which we will create the unique experience that is HeartConf. I
+visited the Lamot conference center last June and immediately knew it was a fit.
+It's a beautiful venue — a mix of old industrial charm and modern architecture —
+in the middle of the city of Mechelen, flanked by the river Dijle, and
+surrounded by charming bars and picturesque squares.
 
 Mechelen is just a short trainride away from Leuven, where we held Heart of
 Clojure. Like Leuven it has a rich history, which is reflected in the cityscape.
@@ -20,7 +21,7 @@ navigate.
 
 ![The Lamot Congress and Heritage Center](https://hello.arnebrasseur.net/uploads/lamot_sun.png)
 
-Once we had a venue and a date, the real work starts. In August I worked out the
+With a venue and date in hand, the real work starts. In August I worked out the
 house style for this event, and put together [the HeartConf 2027
 website](https://2027.heartconf.eu). It ended up being a bold design with bright
 sunny yellow, reflecting both sunny summer vibes, and the boldness and optimism
@@ -38,13 +39,15 @@ other parallel activities like workshops.
 
 But it also means we have much more attractive floor real estate to offer to
 sponsors. This was always a bit of a challenge at the Heart of Clojure venue,
-where space was a bit more tight.
+where space was a bit tight.
 
 So we've revamped our sponsor packages substantially. If you or your company is
 interested in sponsoring then [get in touch!](https://2027.heartconf.eu/contact).
 
 If you're not in a position to sponsor yourself, but you have a warm contact
 that you can introduce us to, then please do get in touch as well.
+
+<button href="https://2027.heartconf.eu/sponsor">Become a Sponsor</button>
 
 ## Next steps
 
