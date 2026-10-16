@@ -14,4 +14,4 @@ directly](https://ti.to/magpie/heartconf-2027).
 
 <tito-widget event="magpie/heartconf-2027"></tito-widget>
     
-{% include newsletter.html %}
+

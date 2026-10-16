@@ -48,7 +48,7 @@ newsletters!
 
 ![The Lamot Congress and Heritage Center](https://hello.arnebrasseur.net/uploads/lamot_sun.png)
 
-## Filling the Box
+## Tickets go on sale this Sunday! 
 
 At this point HeartConf is an empty box. It's a good box. We made it look
 pretty, and we know it has space for lots of amazing content. Over the next nine
@@ -57,6 +57,8 @@ months that box will fill up. With speakers, attendees, and sponsors.
 Ticket sales will go live on Sunday, the 18th of October, at 10:00am Belgian
 time. We'll have a limited block of Early Bird tickets, and experience shows
 these go fast, so don't sleep on it.
+
+<button href="https://2027.heartconf.eu/tickets">Get your ticket!</button>
 
 The call for speakers is expected to go live around mid November. You'll be able
 to send in proposals across multiple topics and tracks. Expect an update by then

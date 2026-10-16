@@ -99,12 +99,12 @@
         <div id="sponsors">
           <h2>Iron Sponsors</h2>
           <row>
-            <column style="padding: 30px 50px 0 100px;">
+            <column>
               <a href="https://nextjournal.com/">
                 <img class="iron" alt="Nextjournal logo" src="https://2027.heartconf.eu/images/sponsor_logos/nextjournal.png">
               </a>
             </column>
-            <column style="padding: 0 100px 0 50px;">
+            <column>
               <a href="https://biotz.io/">
                 <img class="iron" alt="Biotz logo" src="https://2027.heartconf.eu/images/sponsor_logos/biotz.png">
               </a>
